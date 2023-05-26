@@ -1,3 +1,19 @@
+:root {
+	--primary-green: #49E57;
+	--primary-yellow: #F4CE14;
+	--secondary-orange: #EE9972;
+	--secondary-tan: #FBDABB;
+	--secondary-ligtblue: #EDEFEE;
+	--secondary-dark: #333333;
+}
+
+@font-face {
+    font-family: 'Markazi Text';
+    src: url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+    font-weight: medium;
+    font-style: normal;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +51,82 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+header,
+nav ul {
+	display: flex;
+}
+
+header {
+	max-width: 1200px;
+	margin: auto;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+nav ul {
+	justify-content: center;
+	list-style: none;
+	gap: 2rem;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+.logo {
+	max-width: 200px;
+}
+
+/* Typography */
+.display-title {
+	font-family: "Markazi Text", sans-serif;
+	font-weight: 500;
+	font-size: 64pt;
+}
+
+.sub-title {
+	font-family: "Markazi Text", sans-serif;
+	font-weight: 400;
+	font-size: 40pt;
+}
+
+.lead-text {
+	font-family: "Karla", serif;
+	font-weight: 500;
+	font-size: 18pt;
+}
+
+.section-title {
+	font-family: "Karla", serif;
+	font-weight: 800;
+	font-size: 20pt;
+	text-transform: uppercase;
+}
+
+.section-category {
+	font-family: "Karla", serif;
+	font-weight: 800;
+	font-size: 16pt;
+}
+
+.card-title {
+	font-family: "Karla", serif;
+	font-weight: 700;
+	font-size: 18pt;
+}
+
+.p-text {
+	font-family: "Karla", serif;
+	font-weight: 400;
+	font-size: 16pt;
+	line-height: 1.5em;
+}
+
+.highlight-text {
+	font-family: "Karla", serif;
+	font-weight: 500;
+	font-size: 16pt;
 }
