@@ -1,15 +1,20 @@
-function Main() {
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home.js";
+import About from "./About.js";
+import Specials from "./Specials.js";
+import Reviews from "./Reviews.js";
+import Booking from "./Booking.js";
+
+export default function Main() {
 	return (
 		<main>
-			<h1 class="display-title">Display Title</h1>
-			<h2 class="sub-title">Sub Title</h2>
-			<p class="lead-text">Lead Text</p>
-			<p class="section-title">Section Title</p>
-			<p class="section-category">Section Category</p>
-			<p class="card-title">Card Title</p>
-			<p class="p-text">Paragraph Text</p>
-			<p class="highlight-text">Highlight Text</p>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/specials" element={<Specials />} />
+				<Route path="/reviews" element={<Reviews />} />
+				<Route path="/booking" element={<Booking />} />
+			</Routes>
 		</main>
 	)
 }
-export default Main;
